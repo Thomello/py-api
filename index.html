@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot</title>
+    <!-- Add Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto max-w-xl">
+      <div class="bg-white rounded-lg shadow-lg p-4 my-6">
+        <!-- Display chat history here -->
+        <ul id="chat-history" class="list-none"></ul>
+        <!-- Form to accept user input -->
+        <form id="chat-form" class="flex items-center mt-4">
+          <input
+            id="chat-input"
+            class="rounded-l-lg p-4 bg-gray-100 border-t mr-0 border-b border-l text-gray-800 border-gray-200 rounded-none"
+            type="text"
+            placeholder="Enter your question"
+          />
+          <button
+            id="chat-submit"
+            class="px-8 rounded-r-lg bg-blue-500 text-gray-100 font-bold p-4 uppercase border-blue-500 border-t border-b border-r hover:bg-blue-700"
+            type="submit"
+          >
+            Send
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
